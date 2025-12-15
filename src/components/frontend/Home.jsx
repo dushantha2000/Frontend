@@ -4,11 +4,12 @@ import React from 'react'
 import AboutImg from '../../assets/images/about-us.jpg';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import ServiceImg from '../../assets/images/construction1.jpg'
 
 function Home() {
   return (
     <>
-      <Header/>
+      <Header />
 
       <main>
         {/* Hero section */}
@@ -49,7 +50,7 @@ function Home() {
               {/* second row */}
               <div className='col-md-6'>
                 <span>About us</span>
-                <h2>Crafting structures that <br/> last a lifetime</h2>
+                <h2>Crafting structures that <br /> last a lifetime</h2>
                 <p>Building enduring structures requires a comprehensive approach
                   that combines advanced materials, resilient design, routine
                   maintenance, and sustainable practices. By drawing on historical
@@ -66,8 +67,118 @@ function Home() {
 
       </main>
 
+      {/* Our Services */}
+      <section className='section-3 bg-light py-5'>
+        <div className='container-fluid py-5'>
+          <div className='section-header text-center'>
+            <span>our services</span>
+            <h2>Our construction services</h2>
+            <p>We offer a diverse array of construction services,
+              spanning residential, commercial, and industrial projects.</p>
+          </div>
+
+          <div className='row pt-4'>
+            
+            {/* that support to the large resolutions 'col-lg-3' */}
+            {/* service 1 */}
+            <div className='col-md-3 col-lg-3'>
+              <div className='item'>
+                <div className='service-image'>
+                  <img src={ServiceImg} className='w-100' alt=" Service Image" />
+                </div>
+                <div className='service-body'>
+                  <div className='service-title'>
+                    <h3>
+                      Industrial Construction</h3>
+                  </div>
+                  <div className='service-content'>
+                    <p>
+                      Industrial Construction
+                      Industrial construction is a specialized sector within the construction industry that focuses on the design, development, and construction of facilities for industrial use.</p>
+                  </div>
+
+                  <a href='#' className='btn btn-primary'>Read move</a>
+                </div>
+
+              </div>
+
+
+            </div>
+
+             {/* service 2 */}
+            <div className='col-md-3 col-lg-3'>
+              <div className='item'>
+                <div className='service-image'>
+                  <img src={ServiceImg} className='w-100' alt=" Service Image" />
+                </div>
+                <div className='service-body'>
+                  <div className='service-title'>
+                    <h3>
+                      Industrial Construction</h3>
+                  </div>
+                  <div className='service-content'>
+                    <p>
+                      Industrial Construction
+                      Industrial construction is a specialized sector within the construction industry that focuses on the design, development, and construction of facilities for industrial use.</p>
+                  </div>
+
+                  <a href='#' className='btn btn-primary'>Read move</a>
+                </div>
+
+              </div>
+
+
+            </div>
+
+             {/* service 3 */}
+            <div className='col-md-3 col-lg-3'>
+              <div className='item'>
+                <div className='service-image'>
+                  <img src={ServiceImg} className='w-100' alt=" Service Image" />
+                </div>
+                <div className='service-body'>
+                  <div className='service-title'>
+                    <h3>
+                      Industrial Construction</h3>
+                  </div>
+                  <div className='service-content'>
+                    <p>
+                      Industrial Construction
+                      Industrial construction is a specialized sector within the construction industry that focuses on the design, development, and construction of facilities for industrial use.</p>
+                  </div>
+
+                  <a href='#' className='btn btn-primary'>Read move</a>
+                </div>
+              </div>
+            </div>
+
+             {/* service 4 */}
+            <div className='col-md-3 col-lg-3'>
+              <div className='item'>
+                <div className='service-image'>
+                  <img src={ServiceImg} className='w-100' alt=" Service Image" />
+                </div>
+                <div className='service-body'>
+                  <div className='service-title'>
+                    <h3>
+                      Industrial Construction</h3>
+                  </div>
+                  <div className='service-content'>
+                    <p>
+                      Industrial Construction
+                      Industrial construction is a specialized sector within the construction industry that focuses on the design, development, and construction of facilities for industrial use.</p>
+                  </div>
+                  <a href='#' className='btn btn-primary'>Read move</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       {/* footer section */}
-      <Footer/>
+      <Footer />
       {/* end of footer section */}
     </>
   )

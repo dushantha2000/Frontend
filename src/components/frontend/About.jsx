@@ -5,10 +5,14 @@ import Footer from '../common/Footer'
 function About() {
   return (
     <>
+      {/* Header section */}
       <Header />
 
-      <div>About</div>
+      <main>
+        About
+      </main>
 
+      {/* Footer section */}
       <Footer />
     </>
   )
