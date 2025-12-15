@@ -3,6 +3,7 @@ $primary-color :#fe538d;
 $secondary-color :#FFB703;
 $text-color: #000000;
 $text-white :#FFFFFF;
+$dark-background : #222725;
 
 
 //Main font
@@ -33,6 +34,15 @@ p {
     font-size: 1.2em;
 }
 
+ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+        list-style: none; //remove the bullet pints
+    }
+}
+
 header {
     nav {
         .nav-link {
@@ -55,6 +65,54 @@ header {
             }
         }
     }
+}
+
+footer {
+    background-color: $dark-background;
+    color: $text-white;
+
+    h3 {
+        font-size: 1.5em;
+        color: $secondary-color;
+    }
+
+    ul {
+        li {
+            padding: 5px 0;
+        }
+
+    }
+
+    a {
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none; // remove the text uderlines
+    }
+
+    input{
+        padding: 10px 10px;
+        border-radius: 10px;
+        
+    }
+
+    .btn-Submit {
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
+
+        padding: 10px 10px;
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+
+        }
+
+
+    }
+
 }
 
 .section-1 {
@@ -112,16 +170,17 @@ header {
 
 }
 
-.section-2{
-    img{
+.section-2 {
+    img {
         border-radius: 40px;
 
     }
-    span{
+
+    span {
         color: $primary-color;
-        font-size: 1.2em ; 
+        font-size: 1.2em;
         text-transform: uppercase; //capitalse  ABC...
-        padding-bottom: 10px;   // adds 10px of space below the element
-        font-weight: 500;  //opacity
+        padding-bottom: 10px; // adds 10px of space below the element
+        font-weight: 500; //opacity
     }
 }
