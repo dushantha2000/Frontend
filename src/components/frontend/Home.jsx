@@ -7,6 +7,9 @@ import ServiceImg1 from '../../assets/images/construction1.jpg';
 import ServiceImg2 from '../../assets/images/construction2.jpg';
 import ServiceImg3 from '../../assets/images/construction3.jpg';
 import ServiceImg4 from '../../assets/images/construction4.jpg';
+import Icon1 from '../../assets/images/icon-1.svg';
+import Icon2 from '../../assets/images/icon-2.svg';
+import Icon3 from '../../assets/images/icon-3.svg';
 
 function Home() {
   return (
@@ -175,6 +178,62 @@ function Home() {
 
       </section>
 
+      {/* Why choose us */}
+      <section className='section-4'>
+        <div className='container py-5'>
+          <div className='section-header text-center'>
+            <span>Why Choose Us</span>
+            <h2>Discover our wide variety of projects.</h2>
+            <p>Created in close partnership with our clients and collaborators, this approach merges industry expertise,
+              decades of experience, innovation, and flexibility to consistently deliver excellence.</p>
+          </div>
+
+          <div className='row py-5'>
+            <div className='col-md-4'>
+              <div className='card shadow border-0 p-4'>
+                <div className='card-icon'>
+                  <img src={Icon1} alt="" />
+                </div>
+                <div className='card-title mt-3'>
+                  <h3>Cutting-Edge Solutions</h3>
+                </div>
+
+                <p>Small actions create big impacts. It all begins and ends with each employee committing to safer work practices daily, ensuring they return home safely.</p>
+              </div>
+            </div>
+
+            <div className='col-md-4'>
+              <div className='card shadow border-0 p-4 '>
+                <div className='card-icon'>
+                  <img src={Icon2} alt="" />
+                </div>
+                <div className='card-title mt-3'>
+                  <h3>Cutting-Edge Solutions</h3>
+                </div>
+
+                <p>Small actions create big impacts. It all begins and ends with each employee committing to safer work practices daily, ensuring they return home safely.</p>
+              </div>
+            </div>
+
+            <div className='col-md-4'>
+              <div className='card shadow border-0 p-4'>
+                <div className='card-icon'>
+                  <img src={Icon3} alt="" />
+                </div>
+                <div className='card-title mt-3'>
+                  <h3>Cutting-Edge Solutions</h3>
+                </div>
+
+                <p>Small actions create big impacts. It all begins and ends with each employee committing to safer work practices daily, ensuring they return home safely.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
 
       {/* Our projects */}
       <section className='section-3 bg-light py-5'>
@@ -186,7 +245,6 @@ function Home() {
           </div>
 
           <div className='row pt-4'>
-
             {/* that support to the large resolutions 'col-lg-3' */}
             {/* project 1 */}
             <div className='col-md-3 col-lg-3'>
@@ -203,13 +261,9 @@ function Home() {
                     <p>
                       A state-of-the-art residential complex featuring sustainable design, modern amenities, and eco-friendly materials. Completed in 2023, this project showcases our commitment to innovative living spaces.</p>
                   </div>
-
                   <a href='#' className='btn btn-primary'>Read more</a>
                 </div>
-
               </div>
-
-
             </div>
 
             {/* project 2 */}

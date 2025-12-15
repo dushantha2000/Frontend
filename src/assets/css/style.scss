@@ -28,7 +28,7 @@ h2 {
 
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 p {
@@ -207,6 +207,7 @@ footer {
         position: relative;
         overflow: hidden;
         color: $text-white;
+        margin-bottom: 20px;
 
         &:hover {
             .service-body {
@@ -257,4 +258,13 @@ footer {
         }
     }
 
+}
+
+.section-4{
+    .card{
+        border-radius: 40px;
+        margin-bottom: 20px;
+
+    }
+    
 }
