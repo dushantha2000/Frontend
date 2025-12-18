@@ -8,6 +8,9 @@ import ServiceImg2 from '../../assets/images/construction2.jpg';
 import ServiceImg3 from '../../assets/images/construction3.jpg';
 import ServiceImg4 from '../../assets/images/construction4.jpg';
 
+import BlogImg from '../../assets/images/construction4.jpg';
+
+
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
@@ -19,7 +22,7 @@ import AvatarImg4 from '../../assets/images/author-2.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import {  Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 
 
@@ -30,7 +33,7 @@ function Home() {
 
       <main>
         {/* Hero section */}
-        <section className='section-1'>
+        <section className='section-1 '>
           <div className='hero d-flex align-items-center'>
             {/* 100 % sreen  container-fluid */}
             <div className='container-fluid'>
@@ -41,8 +44,8 @@ function Home() {
                 <p>We excel at transforming visions into reality through outstanding craftsmanship and precise<br />
                   attention to detail. With years of experience and a dedication to quality.</p>
                 <div className='mt-4'>
-                  <a className='btn btn-primary'>Contact Now</a>
-                  <a className='btn btn-secondary ms-3'>View Project</a>
+                  <a className='btn btn-primary large'>Contact Now</a>
+                  <a className='btn btn-secondary large ms-3'>View Project</a>
                 </div>
               </div>
             </div>
@@ -54,7 +57,7 @@ function Home() {
 
 
         {/* About me section */}
-        <section className='section-2  py-5'>
+        <section className='section-2 py-5'>
           <div className='container py-5'>
 
             {/* create 2 rows */}
@@ -113,7 +116,7 @@ function Home() {
                       Residential construction involves building homes and living spaces tailored to individual needs. We specialize in creating comfortable, sustainable, and aesthetically pleasing residences that stand the test of time.</p>
                   </div>
 
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
 
               </div>
@@ -137,7 +140,7 @@ function Home() {
                       Commercial construction focuses on developing office buildings, retail spaces, and other business facilities. Our team ensures efficient designs that promote productivity and meet modern business requirements.</p>
                   </div>
 
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
 
               </div>
@@ -161,7 +164,7 @@ function Home() {
                       Infrastructure development includes roads, bridges, and utilities essential for community growth. We deliver robust projects that enhance connectivity and support long-term urban planning.</p>
                   </div>
 
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
               </div>
             </div>
@@ -181,7 +184,7 @@ function Home() {
                     <p>
                       Renovation and remodeling services transform existing structures into modern, functional spaces. We handle everything from minor updates to major overhauls with attention to detail and quality craftsmanship.</p>
                   </div>
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
               </div>
             </div>
@@ -191,7 +194,7 @@ function Home() {
       </section>
 
       {/* Why choose us */}
-      <section className='section-4'>
+      <section className='section-4 py-5'>
         <div className='container py-5'>
           <div className='section-header text-center'>
             <span>Why Choose Us</span>
@@ -294,7 +297,7 @@ function Home() {
                       A 15-story office building designed for productivity and employee well-being. Features include open floor plans, green spaces, and energy-efficient systems, completed ahead of schedule in 2022.</p>
                   </div>
 
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
 
               </div>
@@ -318,7 +321,7 @@ function Home() {
                       Major infrastructure project involving the restoration and strengthening of a key highway bridge. Utilized advanced materials and techniques to extend the structure's lifespan by 30 years.</p>
                   </div>
 
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
               </div>
             </div>
@@ -338,7 +341,7 @@ function Home() {
                     <p>
                       Careful renovation of a century-old building, preserving its architectural heritage while modernizing interiors and systems. This project won local preservation awards for its meticulous craftsmanship.</p>
                   </div>
-                  <a href='#' className='btn btn-primary'>Read more</a>
+                  <a href='#' className='btn btn-primary small'>Read more</a>
                 </div>
               </div>
             </div>
@@ -348,7 +351,7 @@ function Home() {
       </section>
 
       {/* Testimonials section */}
-      <section className='section-5'>
+      <section className='section-5 py-5'>
         <div className='container py-5'>
           <div className='section-header text-center'>
             <span>Testimonials</span>
@@ -357,11 +360,11 @@ function Home() {
           </div>
 
           <Swiper
-          modules={[Pagination]}
+            modules={[Pagination]}
             spaceBetween={50}
             slidesPerView={3}
             pagination={{ clickable: true }}
-            
+
           >
             {/* card-1 */}
             <SwiperSlide>
@@ -394,7 +397,7 @@ function Home() {
                     <p>Our recent partnership with SAASA for a construction project yielded an outstanding experience. The team at SAASA consistently demonstrated exceptional professionalism, keen attention to detail, and a strong commitment to quality throughout all phases, from initial planning through final execution</p>
                   </div>
 
-                  <hr/>
+                  <hr />
                   <div className='d-flex meta'>
                     <div>
                       <img src={AvatarImg} alt="" width={50} />
@@ -410,7 +413,7 @@ function Home() {
             </SwiperSlide>
 
             {/* card-2 */}
-             <SwiperSlide>
+            <SwiperSlide>
               <div className='card shadow border-0'>
                 <div className='card-body p-5'>
                   <div className='rating'>
@@ -440,7 +443,7 @@ function Home() {
                     <p>Our recent partnership with SAASA for a construction project yielded an outstanding experience. The team at SAASA consistently demonstrated exceptional professionalism, keen attention to detail, and a strong commitment to quality throughout all phases, from initial planning through final execution</p>
                   </div>
 
-                  <hr/>
+                  <hr />
                   <div className='d-flex meta'>
                     <div>
                       <img src={AvatarImg} alt="" width={50} />
@@ -456,7 +459,7 @@ function Home() {
             </SwiperSlide>
 
             {/* card-3 */}
-             <SwiperSlide>
+            <SwiperSlide>
               <div className='card shadow border-0'>
                 <div className='card-body p-5'>
                   <div className='rating'>
@@ -486,7 +489,7 @@ function Home() {
                     <p>Our recent partnership with SAASA for a construction project yielded an outstanding experience. The team at SAASA consistently demonstrated exceptional professionalism, keen attention to detail, and a strong commitment to quality throughout all phases, from initial planning through final execution</p>
                   </div>
 
-                  <hr/>
+                  <hr />
                   <div className='d-flex meta'>
                     <div>
                       <img src={AvatarImg} alt="" width={50} />
@@ -502,7 +505,7 @@ function Home() {
             </SwiperSlide>
 
             {/* card-4 */}
-             <SwiperSlide>
+            <SwiperSlide>
               <div className='card shadow border-0'>
                 <div className='card-body p-5'>
                   <div className='rating'>
@@ -532,7 +535,7 @@ function Home() {
                     <p>Our recent partnership with SAASA for a construction project yielded an outstanding experience. The team at SAASA consistently demonstrated exceptional professionalism, keen attention to detail, and a strong commitment to quality throughout all phases, from initial planning through final execution</p>
                   </div>
 
-                  <hr/>
+                  <hr />
                   <div className='d-flex meta'>
                     <div>
                       <img src={AvatarImg} alt="" width={50} />
@@ -550,6 +553,65 @@ function Home() {
           </Swiper>
 
         </div>
+      </section>
+
+      {/* blog section */}
+      <section className='section-6 bg-light py-5'>
+        <div className='container py-5'>
+          <div className='section-header text-center'>
+            <span>Blog & News</span>
+            <h2>Articles & blog posts</h2>
+            <p>We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.</p>
+          </div>
+
+          {/* blog 1 */}
+          <div className='row py-5'>
+            <div className='col-md-4 '>
+              <div className='card shadow border-0'>
+                <div className='card-img-top'>
+                  <img src={BlogImg} alt="" className='w-100' />
+                </div>
+                <div className='card-body p-4'>
+                  <div className='mb-3'>
+                    <a href='' className='title'>One of the defining characteristics of civil construction </a>
+                  </div>
+                  <a href='' className='btn btn-primary small'>Read more</a>
+                </div>
+              </div>
+            </div>
+
+            {/* blog 2 */}
+            <div className='col-md-4 '>
+              <div className='card shadow border-0'>
+                <div className='card-img-top'>
+                  <img src={BlogImg} alt="" className='w-100' />
+                </div>
+                <div className='card-body p-4'>
+                  <div className='mb-3'>
+                    <a href='' className='title'>One of the defining characteristics of civil construction </a>
+                  </div>
+                  <a href='' className='btn btn-primary small'>Read more</a>
+                </div>
+              </div>
+            </div>
+
+            {/* blog 3 */}
+            <div className='col-md-4 '>
+              <div className='card shadow border-0'>
+                <div className='card-img-top'>
+                  <img src={BlogImg} alt="" className='w-100' />
+                </div>
+                <div className='card-body p-4'>
+                  <div className='mb-3'>
+                    <a href='' className='title'>One of the defining characteristics of civil construction </a>
+                  </div>
+                  <a href='' className='btn btn-primary small'>Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
       {/* footer section */}

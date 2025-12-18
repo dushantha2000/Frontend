@@ -8,11 +8,11 @@ $light-background : #9e9b9b;
 
 
 //Main font
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 body {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Rubik", sans-serif;
 
 }
 
@@ -41,6 +41,13 @@ ul {
 
     li {
         list-style: none; //remove the bullet pints
+    }
+}
+a{
+    text-decoration: none;
+    color: $text-color;
+    &:hover{
+        color: $primary-color;
     }
 }
 
@@ -84,7 +91,7 @@ footer {
 
     }
 
-    a {
+    a{
         color: $text-white;
         font-size: 1.2em;
         text-decoration: none; // remove the text uderlines
@@ -135,11 +142,22 @@ footer {
 
 }
 
+
+.small {
+    padding: 10px 15px;
+}
+
+.large {
+    padding: 15px 20px;
+
+
+}
+
 .btn-primary {
     background-color: $primary-color;
     border: 1px solid $primary-color;
 
-    padding: 15px 20px;
+  
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -158,7 +176,7 @@ footer {
 
 
 
-    padding: 15px 20px;
+    
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -260,45 +278,67 @@ footer {
 
 }
 
-.section-4{
-    .card{
+.section-4 {
+    .card {
         border-radius: 40px;
         margin-bottom: 20px;
 
     }
-    
+
 }
 
-.section-5{
-    .swiper{
-        padding: 25px  25px 50px 25px;
-        .swiper-pagination-bullet-active{
+.section-5 {
+    .swiper {
+        padding: 25px 25px 50px 25px;
+
+        .swiper-pagination-bullet-active {
             background-color: $secondary-color;
         }
 
     }
-    .card{
+
+    .card {
         border-radius: 40px;
-        .rating{
+
+        .rating {
             color: $secondary-color;
         }
-        .content{
-            p{
+
+        .content {
+            p {
                 font-size: 1em;
             }
         }
 
-        .meta{
-            img{
-                border-radius: 50% ;
+        .meta {
+            img {
+                border-radius: 50%;
 
             }
         }
-        .name{
+
+        .name {
             font-size: 1.3em;
             font-weight: 500;
         }
 
     }
-    
+
+}
+
+.section-6 {
+    .card {
+        border-radius: 40px;
+        img{
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+        .card-body {
+            a.title {
+                font-size: 1.4em;
+                font-weight: 400;
+
+            }
+        }
+    }
 }
