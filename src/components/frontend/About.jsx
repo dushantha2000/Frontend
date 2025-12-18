@@ -6,6 +6,7 @@ import AboutUs from '../common/AboutUs';
 import MemberImg1 from '../../assets/images/team-1.jpg';
 import MemberImg2 from '../../assets/images/team-2.jpg';
 import Testimonials from '../common/Testimonials';
+import Hero from '../common/Hero';
 
 
 function About() {
@@ -14,19 +15,10 @@ function About() {
       {/* Header section */}
       <Header />
       <main>
-        <section className='section-7 '>
-          <div className='hero d-flex align-items-center'>
-            <div className='container'>
-              <div className='text-left'>
-                <span>Quality. Integrity. Value.</span>
-                <h1>About Us</h1>
-                <p>We excel at transforming visions into reality<br />
-                  through outstanding craftsmanship and precise.</p>
-              </div>
-            </div>
-          </div>
-
-        </section>
+        <Hero preHeadering='Quality. Integrity. Value.'
+          heading='About Us'
+          text='We offer a diverse array of construction services,
+                  spanning residential, commercial, and industrial projects.'/>
 
         {/* About me section */}
         <AboutUs />
@@ -140,7 +132,7 @@ function About() {
         </section>
 
         {/*Testimonials section  */}
-        <Testimonials/>
+        <Testimonials />
 
       </main>
 
