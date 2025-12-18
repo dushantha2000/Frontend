@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 const Header = ()=> {
   return (
     <header>
-            <div className='container'>
+            <div className='container py-3'>
               <Navbar expand="lg" >
                 <Navbar.Brand href="#home" className='logo'>
                   <span>UrbanEdge </span>
