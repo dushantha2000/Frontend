@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from '../common/Header'
-import Footer from '../common/Footer'
+import Header from '../common/Header';
+import Footer from '../common/Footer';
+import AboutUs from '../common/AboutUs';
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
       {/* Header section */}
       <Header />
       <main>
-        <section className='section-1 '>
+        <section className='section-7 '>
           <div className='hero d-flex align-items-center'>
             <div className='container'>
               <div className='text-left'>
@@ -21,6 +22,11 @@ function About() {
           </div>
 
         </section>
+
+        {/* About me section */}
+        <AboutUs />
+        {/* end of about us section */}
+
       </main>
 
       {/* Footer section */}

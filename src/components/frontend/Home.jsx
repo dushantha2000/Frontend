@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../assets/css/style.scss';
+
 import AboutImg from '../../assets/images/about-us.jpg';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
@@ -24,6 +26,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
+import AboutUs from '../common/AboutUs';
 
 
 function Home() {
@@ -57,32 +60,7 @@ function Home() {
 
 
         {/* About me section */}
-        <section className='section-2 py-5'>
-          <div className='container py-5'>
-
-            {/* create 2 rows */}
-            {/* first row */}
-            <dvi className='row'>
-              <div className='col-md-6'>
-                <img src={AboutImg} className='w-100' />
-              </div>
-
-              {/* second row */}
-              <div className='col-md-6'>
-                <span>About us</span>
-                <h2>Crafting structures that <br /> last a lifetime</h2>
-                <p>Building enduring structures requires a comprehensive approach
-                  that combines advanced materials, resilient design, routine
-                  maintenance, and sustainable practices. By drawing on historical
-                  insights and utilizing modern technology. <br /><br />
-                  Designing structures that stand the test of time involves a seamless
-                  blend of cutting-edge materials, durable design, ongoing upkeep,
-                  and eco-friendly practices. By combining lessons from the past with
-                  the power of modern technology.</p>
-              </div>
-            </dvi>
-          </div>
-        </section>
+       <AboutUs/>
         {/* end of about us section */}
 
       </main>
