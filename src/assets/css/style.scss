@@ -1,10 +1,11 @@
 //Global colors
-$primary-color :#fe538d;
-$secondary-color :#FFB703;
-$text-color: #000000;
-$text-white :#FFFFFF;
-$dark-background : #222725;
-$light-background : #9e9b9b;
+$primary-color: #007bff;
+$secondary-color: #ff7e67;
+$text-color: #212529;
+$text-white: #ffffff;
+$dark-background: #222222;
+$light-background: #ff1b1b;
+$main-background :#eeeeee;
 
 
 //Main font
@@ -13,6 +14,7 @@ $light-background : #9e9b9b;
 
 body {
     font-family: "Rubik", sans-serif;
+
 
 }
 
@@ -54,24 +56,34 @@ a {
 }
 
 header {
+    background-color: $main-background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
     nav {
         .nav-link {
             text-transform: uppercase;
             color: $text-color;
             font-size: 1em;
-            font-weight: 700;
+            font-weight: 500;
             margin-left: 20px;
 
         }
 
         .logo {
-            text-transform: uppercase;
-            font-size: 1em;
-            font-weight: 500;
-
-            span {
-                color: $primary-color;
-
+            // Fix: Changed width from 1% to a visible size
+            width: 150px; 
+            height: auto;
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain; // Ensures the logo isn't stretched
             }
         }
     }
@@ -126,6 +138,7 @@ footer {
 }
 
 .section-1 {
+    background-color: $main-background;
 
     .hero {
         // background-image: url(../images/hero.jpg);
@@ -210,6 +223,8 @@ footer {
 }
 
 .section-2 {
+    background-color: $main-background;
+
     img {
         border-radius: 40px;
 
@@ -225,6 +240,7 @@ footer {
 }
 
 .section-3 {
+    background-color: $main-background;
 
     .item {
         position: relative;
@@ -284,6 +300,8 @@ footer {
 }
 
 .section-4 {
+    background-color: $main-background;
+
     .card {
         border-radius: 40px;
         margin-bottom: 20px;
@@ -293,6 +311,8 @@ footer {
 }
 
 .section-5 {
+    background-color: $main-background;
+
     .swiper {
         padding: 25px 25px 50px 25px;
 
@@ -332,6 +352,8 @@ footer {
 }
 
 .section-6 {
+    background-color: $main-background;
+
     .card {
         border-radius: 40px;
 
@@ -352,6 +374,7 @@ footer {
 
 
 .section-7 {
+    background-color: $main-background;
 
     .hero {
         // background-image: url(../images/hero.jpg);
@@ -368,14 +391,16 @@ footer {
 
 }
 
-.section-8{
+.section-8 {
+    background-color: $main-background;
+
     .card {
         border-radius: 40px;
 
         img {
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
-            
+
         }
 
         .card-body {
@@ -385,11 +410,12 @@ footer {
 
             }
 
-            .card-title{
+            .card-title {
                 font-size: 1.5em;
                 font-weight: 500;
             }
-            .card-sub-title{
+
+            .card-sub-title {
                 font-size: 1.3em;
                 color: $light-background;
             }

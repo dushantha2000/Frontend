@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import logo2 from '../../assets/images/logo2.png'
 
 const Header = ()=> {
   return (
@@ -8,8 +9,11 @@ const Header = ()=> {
             <div className='container py-3'>
               <Navbar expand="lg" >
                 <Navbar.Brand href="#home" className='logo'>
-                  <span>UrbanEdge </span>
-                  Constructions
+                  <img src={logo2}  className='w-10 h-10'/>
+
+
+                  {/* <span>UrbanEdge </span>
+                  Constructions */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
