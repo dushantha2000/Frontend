@@ -130,7 +130,7 @@ footer {
     .hero {
         // background-image: url(../images/hero.jpg);
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/hero.jpg);
-        min-height: 500px;
+        min-height: 800px;
 
         //text Centering the image
         display: flex;
@@ -352,14 +352,47 @@ footer {
 
 
 .section-7 {
-    // background-image: url(../images/hero.jpg);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/hero.jpg);
-    min-height: 500px;
 
-    color: $text-white;
+    .hero {
+        // background-image: url(../images/hero.jpg);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/hero.jpg);
+        min-height: 500px;
 
-    span {
-        color: #FFB703;
+        color: $text-white;
+
+        span {
+            color: #FFB703;
+        }
+
     }
 
+}
+
+.section-8{
+    .card {
+        border-radius: 40px;
+
+        img {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            
+        }
+
+        .card-body {
+            a.title {
+                font-size: 1.4em;
+                font-weight: 400;
+
+            }
+
+            .card-title{
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            .card-sub-title{
+                font-size: 1.3em;
+                color: $light-background;
+            }
+        }
+    }
 }
