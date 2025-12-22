@@ -21,8 +21,8 @@ const Header = ()=> {
                     <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
                     <Nav.Link href="/about" className='nav-link'>About Us</Nav.Link>
                     <Nav.Link href="/services" className='nav-link'>Services</Nav.Link>
-                    <Nav.Link href="/blog" className='nav-link'>Blogs</Nav.Link>
                     <Nav.Link href="/projects" className='nav-link'>Our Project</Nav.Link>
+                    <Nav.Link href="/blog" className='nav-link'>Blogs</Nav.Link>
                     <Nav.Link href="/contact" className='nav-link'>Contact</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
