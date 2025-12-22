@@ -422,3 +422,20 @@ footer {
         }
     }
 }
+
+.section-9 {
+    background-color: $main-background;
+
+    img {
+        border-radius: 40px;
+
+    }
+
+    span {
+        color: $primary-color;
+        font-size: 1.2em;
+        text-transform: uppercase; //capitalse  ABC...
+        padding-bottom: 10px; // adds 10px of space below the element
+        font-weight: 500; //opacity
+    }
+}
